@@ -1,0 +1,60 @@
+@keyframes background-change {
+    0% {
+    }
+    100% {
+        background-color: black;
+    }
+}
+@keyframes h2-change {
+    0%{}
+    100%{
+        color: white;
+    }
+}
+//animation sur les miniatures
+@keyframes min_zoom {
+   
+    100%{
+        transform-origin: top right;
+        transform:scale(1.2);
+        border-radius: 10%;
+    }
+}
+
+//carte miniatures avec liens href vers ancre
+.hov {
+    :hover {
+        animation: min_zoom 300ms ease-in-out both;
+    }
+}
+// class: "flip" créé sur index.js, animation rotation card
+.card.flip, .card--2.flip, .card--3.flip, .card--4.flip, .card--5.flip {
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(1.5) perspective(1000px) rotateY(180deg);
+    background-color: white;
+    z-index: 10;
+}
+.card.flip {
+    height:580px;
+}
+.card--2.flip {
+    height:500px;
+    transform: translate(-50%, -50%) scale(1.4) perspective(1000px) rotateY(180deg);
+}
+.card--3.flip {
+    height:520px;
+}
+.card--4.flip {
+    height:470px;
+    margin:0;
+}
+.card--5.flip {
+    height:450px;
+}
+.body--flip {
+    animation: background-change ease 1000ms both;
+}
+.h2--flip {
+   color:white;
+}

@@ -1,0 +1,185 @@
+body {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 3px;
+    max-width: 1600px;
+    padding-left: 5%;
+    margin:0%;
+}
+
+header a {
+    text-decoration: none;
+    color:black;
+}
+h1 {
+    font-size: 60px;
+    height:480%;
+    color: rgb(91, 5, 1);
+    text-shadow: rgba(173,55,29, 0.68);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: lighter; 
+    position:absolute;
+    left:7.2%; 
+    top:20%;
+    z-index: 2;
+}
+//fleche de retour en haut de l'ecran
+.arrow{
+    display:none;
+}
+// // apparition du texte haut
+.text_appear {
+    font-size: 100px;
+    z-index: 15;
+    position:absolute;
+    top: 48%;
+    left: 35%;
+    font-family: 'Lobster', cursive;
+}
+.line{
+    background-color:#B00026 ;
+    height:1000%;
+    width: 1px;
+    margin-bottom:10%;
+    position: fixed;
+    top:0%;
+    left:1%;
+    opacity: .3;
+}
+
+.line--2{
+    left:10%;
+    width:3px;
+    position: fixed;
+    opacity: .5;
+}
+.line--3{
+    left:20%;
+    opacity: .5;
+}
+.line--4{
+    left:30%;
+    width:3px;
+    position: fixed;
+    opacity: .5;
+}
+.line--5{
+    left:40%;
+    opacity: .5;
+}
+.line--6{
+    left:50%;
+    opacity: .5;
+}
+.line--7{
+    left:60%;
+    width:3px;
+    position: fixed;
+    opacity: .5;
+}
+.line--8{
+    left:70%;
+}
+.line--9{
+    left:80%;
+}
+.line--10{
+    left:90%;
+    width: 3px;
+    position: fixed;
+    opacity: .5;
+}
+/* ligne vertical pour cadrillage de fond */
+.vertical{
+    height: 1px;
+    min-width:100%;
+    left:0%;
+    position: absolute;
+}
+.v2{
+    top:15%; 
+    height:2px; 
+    opacity: .5; 
+    position: fixed;
+}
+.v3{
+    top:30%;   
+}
+.v4{
+    top:45%; 
+   
+}
+.v5{
+    top:60%; 
+    height:2px;  
+    opacity: .5;
+    position: fixed;
+}
+.v6{
+    top:75%;  
+}
+.v7{
+    top:90%; 
+}
+.v8{
+    top:105%; 
+    height:2px; 
+    opacity: .5; 
+    position: fixed;
+}
+.v9{
+    top:120%;   
+}
+.v10{
+    top:135%;   
+}
+
+header h2{
+    position:fixed;
+    top:5%; 
+    left:32.5%;  
+}
+.recipe__nav{
+    left: 52%;
+}
+nav ul{
+    list-style-type: none;
+}
+nav ul h2 {
+    font-size: 35px;
+}
+nav ul li {
+    width: 10%;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_min {
+    
+    position: absolute;
+    top:15.32%;
+    left:20%;
+}
+.link_min--2 {
+    left:70%;
+    top:30.32%;    
+}
+.link_min--3 {
+    left:30%;
+    top:75.32%;
+}
+.link_min--4 {
+    top:30.32%;
+    left:30%;  
+}
+.link_min--5 {
+    top:60.32%;
+    left:80.05%;  
+}
+
+
+section h3 {
+    width:700px;
+}

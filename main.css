@@ -1,0 +1,562 @@
+@-webkit-keyframes background-change {
+  100% {
+    background-color: black;
+  }
+}
+@keyframes background-change {
+  100% {
+    background-color: black;
+  }
+}
+@-webkit-keyframes h2-change {
+  100% {
+    color: white;
+  }
+}
+@keyframes h2-change {
+  100% {
+    color: white;
+  }
+}
+@-webkit-keyframes min_zoom {
+  100% {
+    transform-origin: top right;
+    transform: scale(1.2);
+    border-radius: 10%;
+  }
+}
+@keyframes min_zoom {
+  100% {
+    transform-origin: top right;
+    transform: scale(1.2);
+    border-radius: 10%;
+  }
+}
+.hov :hover {
+  -webkit-animation: min_zoom 300ms ease-in-out both;
+          animation: min_zoom 300ms ease-in-out both;
+}
+
+.card.flip, .card--2.flip, .card--3.flip, .card--4.flip, .card--5.flip {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.5) perspective(1000px) rotateY(180deg);
+  background-color: white;
+  z-index: 10;
+}
+
+.card.flip {
+  height: 580px;
+}
+
+.card--2.flip {
+  height: 500px;
+  transform: translate(-50%, -50%) scale(1.4) perspective(1000px) rotateY(180deg);
+}
+
+.card--3.flip {
+  height: 520px;
+}
+
+.card--4.flip {
+  height: 470px;
+  margin: 0;
+}
+
+.card--5.flip {
+  height: 450px;
+}
+
+.body--flip {
+  -webkit-animation: background-change ease 1000ms both;
+          animation: background-change ease 1000ms both;
+}
+
+.h2--flip {
+  color: white;
+}
+
+.card {
+  position: relative;
+  max-width: 410px;
+  width: 23.5%;
+  height: 500px;
+  border-radius: 25px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  transition: 1s;
+  left: 6.2%;
+  letter-spacing: 1px;
+  box-shadow: 10px 10px 30px #4A2216;
+  margin-top: 100%;
+}
+
+.card--2 {
+  left: 30%;
+  width: 35.5%;
+  max-width: 580px;
+  height: 650px;
+  margin: 0%;
+}
+
+.card--3 {
+  left: 65.7%;
+  margin-top: 200px;
+  max-width: 400px;
+  width: 24%;
+  height: 300px;
+  margin: 0;
+}
+
+.card--4 {
+  margin: 5%;
+  left: 1.2%;
+  height: 350px;
+}
+
+.card--5 {
+  margin: 0;
+  max-width: 800px;
+  width: 45%;
+  left: 60%;
+}
+
+.card-face {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.card-front {
+  background-image: url("images/sandwich_viande.jpg");
+  background-size: cover;
+}
+
+.front2 {
+  background-image: url("images/grenadin.jpg");
+}
+
+.front3 {
+  background-image: url("images/courgette_farcie.jpg");
+}
+
+.front4 {
+  background-image: url("images/tartare_brousse.jpg");
+}
+
+.front5 {
+  background-image: url("images/cremeux_petit_pois.jpg");
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  font-size: 13px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  position: absolute;
+  top: 0%;
+  left: 70%;
+  padding-top: 4.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 13%;
+  box-sizing: border-box;
+}
+.navbar .logo {
+  font-size: 50px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.navbar a {
+  color: black;
+}
+
+.navbar .nav-links ul {
+  display: flex;
+  font-size: 40px;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.navbar .nav-links ul li {
+  margin: 0 25px;
+}
+
+.navbar .nav-links ul li.active a {
+  color: #4A2216;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 40px;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: -100%;
+  transition: all 500ms ease-out;
+  opacity: 0;
+}
+.nav-links ul {
+  flex-direction: column;
+}
+
+.menu-burger {
+  font-size: 40px;
+  z-index: 5;
+}
+
+.nav-links.mobile-menu {
+  right: 0;
+  z-index: 4;
+  opacity: 1;
+}
+
+body {
+  font-family: "Lobster", cursive;
+  letter-spacing: 3px;
+  max-width: 1600px;
+  padding-left: 5%;
+  margin: 0%;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 60px;
+  height: 480%;
+  color: rgb(91, 5, 1);
+  text-shadow: rgba(173, 55, 29, 0.68);
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-weight: lighter;
+  position: absolute;
+  left: 7.2%;
+  top: 20%;
+  z-index: 2;
+}
+
+.arrow {
+  display: none;
+}
+
+.text_appear {
+  font-size: 100px;
+  z-index: 15;
+  position: absolute;
+  top: 48%;
+  left: 35%;
+  font-family: "Lobster", cursive;
+}
+
+.line {
+  background-color: #B00026;
+  height: 1000%;
+  width: 1px;
+  margin-bottom: 10%;
+  position: fixed;
+  top: 0%;
+  left: 1%;
+  opacity: 0.3;
+}
+
+.line--2 {
+  left: 10%;
+  width: 3px;
+  position: fixed;
+  opacity: 0.5;
+}
+
+.line--3 {
+  left: 20%;
+  opacity: 0.5;
+}
+
+.line--4 {
+  left: 30%;
+  width: 3px;
+  position: fixed;
+  opacity: 0.5;
+}
+
+.line--5 {
+  left: 40%;
+  opacity: 0.5;
+}
+
+.line--6 {
+  left: 50%;
+  opacity: 0.5;
+}
+
+.line--7 {
+  left: 60%;
+  width: 3px;
+  position: fixed;
+  opacity: 0.5;
+}
+
+.line--8 {
+  left: 70%;
+}
+
+.line--9 {
+  left: 80%;
+}
+
+.line--10 {
+  left: 90%;
+  width: 3px;
+  position: fixed;
+  opacity: 0.5;
+}
+
+/* ligne vertical pour cadrillage de fond */
+.vertical {
+  height: 1px;
+  min-width: 100%;
+  left: 0%;
+  position: absolute;
+}
+
+.v2 {
+  top: 15%;
+  height: 2px;
+  opacity: 0.5;
+  position: fixed;
+}
+
+.v3 {
+  top: 30%;
+}
+
+.v4 {
+  top: 45%;
+}
+
+.v5 {
+  top: 60%;
+  height: 2px;
+  opacity: 0.5;
+  position: fixed;
+}
+
+.v6 {
+  top: 75%;
+}
+
+.v7 {
+  top: 90%;
+}
+
+.v8 {
+  top: 105%;
+  height: 2px;
+  opacity: 0.5;
+  position: fixed;
+}
+
+.v9 {
+  top: 120%;
+}
+
+.v10 {
+  top: 135%;
+}
+
+header h2 {
+  position: fixed;
+  top: 5%;
+  left: 32.5%;
+}
+
+.recipe__nav {
+  left: 52%;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul h2 {
+  font-size: 35px;
+}
+
+nav ul li {
+  width: 10%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link_min {
+  position: absolute;
+  top: 15.32%;
+  left: 20%;
+}
+
+.link_min--2 {
+  left: 70%;
+  top: 30.32%;
+}
+
+.link_min--3 {
+  left: 30%;
+  top: 75.32%;
+}
+
+.link_min--4 {
+  top: 30.32%;
+  left: 30%;
+}
+
+.link_min--5 {
+  top: 60.32%;
+  left: 80.05%;
+}
+
+section h3 {
+  width: 700px;
+}
+
+@media screen and (max-width: 1600px) {
+  h1 {
+    font-size: 200px;
+  }
+  .titre--zoom {
+    font-size: 150px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .navbar {
+    top: 6%;
+    right: 10%;
+    padding: 0;
+    background-color: rgba(173, 55, 29, 0.68);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .logo {
+    display: none;
+  }
+  .nav-links {
+    background-color: rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: -100%;
+    transition: all 500ms ease-out;
+    opacity: 0;
+  }
+  .navbar .nav-links ul {
+    width: auto;
+    justify-content: center;
+  }
+  .navbar .nav-links ul li {
+    margin-top: 25px;
+    margin-left: 120px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .vertical {
+    display: none;
+  }
+  img {
+    display: none;
+  }
+  h1 {
+    font-size: 35px;
+    height: 600%;
+    top: 8%;
+    left: 3%;
+  }
+  nav ul h2 {
+    font-size: 25px;
+  }
+  .recipe__nav {
+    left: 67%;
+  }
+  header h2 {
+    left: 37%;
+  }
+  .text_appear {
+    font-size: 60px;
+    top: 20%;
+    left: 32%;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .card, .card--2, .card--3, .card--4, .card--5 {
+    display: block;
+    width: 84%;
+    left: auto;
+    right: auto;
+  }
+  .card {
+    margin-top: 150%;
+  }
+  .card--2, .card--3, .card--4, .card--5 {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .card.flip, .card--2.flip, .card--3.flip {
+    transform: scale(1) rotateY(180deg);
+  }
+  .card.flip {
+    height: 550px;
+  }
+  .card--2.flip {
+    height: 620px;
+  }
+  .card--3.flip {
+    height: 520px;
+  }
+  .card--4.flip {
+    height: 450px;
+  }
+  .arrow {
+    display: block;
+    font-size: 70px;
+    position: fixed;
+    right: 10%;
+    bottom: 10%;
+    color: rgba(173, 55, 29, 0.68);
+  }
+}/*# sourceMappingURL=main.css.map */
