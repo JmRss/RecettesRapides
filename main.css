@@ -485,8 +485,38 @@ section h3 {
     justify-content: center;
   }
   .navbar .nav-links ul li {
-    margin-top: 25px;
+    margin-top: 5px;
     margin-left: 120px;
+  }
+  .navbar .nav-links ul li .active {
+    margin-top: 0px;
+  }
+  .nav-links.mobile-menu {
+    right: 85%;
+    box-shadow: 10px 5px 10px rgba(173, 55, 29, 0.68);
+  }
+  .text_appear {
+    font-size: 60px;
+    top: 20%;
+    left: 23%;
+  }
+  .card.flip, .card--2.flip, .card--3.flip, .card--4.flip, .card--5.flip {
+    top: 0;
+    left: 0;
+    transform: translate(1px, 1px) scale(1) perspective(1000px) rotateY(180deg);
+  }
+  .card.flip {
+    height: 620px;
+  }
+  .card.flip h3 {
+    width: 100%;
+    text-align: center;
+  }
+  .card--2.flip {
+    height: 720px;
+  }
+  .card--4.flip {
+    height: 530px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -511,11 +541,6 @@ section h3 {
   header h2 {
     left: 37%;
   }
-  .text_appear {
-    font-size: 60px;
-    top: 20%;
-    left: 32%;
-  }
   section {
     display: flex;
     flex-direction: column;
@@ -535,21 +560,6 @@ section h3 {
   .card--2, .card--3, .card--4, .card--5 {
     margin-top: 10%;
     margin-bottom: 10%;
-  }
-  .card.flip, .card--2.flip, .card--3.flip {
-    transform: scale(1) rotateY(180deg);
-  }
-  .card.flip {
-    height: 550px;
-  }
-  .card--2.flip {
-    height: 620px;
-  }
-  .card--3.flip {
-    height: 520px;
-  }
-  .card--4.flip {
-    height: 450px;
   }
   .arrow {
     display: block;
