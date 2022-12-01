@@ -9,56 +9,65 @@
     }
 }
 @media screen and(max-width: 900px) {
-    .navbar {
-        top:6%;
-        right:10%;
+    body{
         padding: 0;
-        background-color: rgba(173,55,29, 0.68);
-        width:70px;
-        height:70px;
-        border-radius: 50%;
+        height: auto;
+    } 
+    section{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        color:white;
+        justify-content: center;
     }
-    .logo {
-        display:none
-    }
-    .nav-links {
-       
-        background-color: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(10px);
+    //images miniatures
+    img{
+        display: flex;
+        height:75px;
+        width: 75px;
         border-radius: 50%;
-        width:200px;
-        height: 200px;
-        padding:0;
-        display:flex;
+    }
+    //titre site h1 
+    h1{
+        height:320px;
+        width:100px;  
+        font-size: 35px;
+        position: absolute;
+        left:67%;
+        top:55%;
+    }
+    .titre_recette {
+        left:-13%;
+        top:5%;
+    }
+    //container img version mobile sur poage d'accueil
+     .container_min_index {
+        left:-75%;
+     }
+    //miniatures
+    .link_min,.link_min--2,.link_min--3,.link_min--4,.link_min--5 {
+        display: flex;
+        position: relative;
         align-items: center;
-        justify-content: center;
-        right:-100%;
-        transition: all 500ms ease-out;
-        opacity: 0;
+        top:auto;
+        left:auto;
     }
-    .navbar .nav-links ul {
-        width: auto;
-        justify-content: center;
-        li{
-            .active{
-                margin-top: 0px;
-            }
-            margin-top: 5px;
-            margin-left: 120px;
-        }
+    //container miniatures
+    .container_min{
+        width: 100%;
+        height:100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        position: absolute;
     }
-    .nav-links.mobile-menu {
-       right:85%;
-       box-shadow:  10px 5px 10px rgba(173,55,29, 0.68);
+    .vertical {
+        display: none;
     }
+
     //apparition text Typewritter JS 
     .text_appear {
-        font-size: 60px;
-        top: 20%;
+        font-size: 55px;
+        top: 35%;
         left: 23%;
     }
     //flip des cards sans scale
@@ -68,34 +77,41 @@
         transform: translate(1px, 1px) scale(1) perspective(1000px) rotateY(180deg);
     }
     .card.flip{
-        height:620px;
+        height:670px;
         h3{
             width:100%;
             text-align: center;
         }
     }
     .card--2.flip{
-        height:720px;
+        height:760px;
     }
-    .card--4.flip{
-        height:530px;
+    .card--3.flip{
+        height:600px;
     }
-    
+    .card--4.flip, .card--5.flip{
+        height:550px;
+    }
+    //container card sur la page recette.html
+    #ancre__menu{
+        margin:5%;
+        margin-top: 100%;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+    }
+    //les card sur la page recette.html
+    .card_recettes{
+        margin:5%;
+        height:300px;
+        width:80%;
+        left:auto;
+        right: auto;
+    }
 }
 @media screen and(max-width: 500px) {
 
-    .vertical {
-        display: none;
-    }
-    img {
-        display:none;
-    }
-    h1 {
-        font-size: 35px;
-        height: 600%;
-        top: 8%; 
-        left: 3%;
-    }
     nav ul h2 {
         font-size: 25px;
     }
@@ -105,26 +121,7 @@
     header h2 {
         left: 37%;
     }
-    section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-    }
-    .card, .card--2, .card--3, .card--4, .card--5 {
-        display: block;
-        width:84%;
-        left:auto;
-        right: auto;
-    }
-    .card {
-        margin-top: 150%;
-    }
-    .card--2, .card--3, .card--4, .card--5 {
-        margin-top:10%;
-        margin-bottom: 10%;
-    }
+
     .arrow {
         display: block;
         font-size: 70px;

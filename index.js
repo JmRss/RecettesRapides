@@ -18,6 +18,22 @@ menuBurger.onclick = () => {
     navLinks.classList.toggle('mobile-menu')
 }
 
+new Typewriter(text, {
+    //boucle l'animation
+    loop:true,
+    deleteSpeed: 20
+})
+//écrire du texte de façon "direct". changeDelay change la vitesse d'apparition en ms
+.changeDelay(50)
+.typeString('Cuisinez :<span style="color: #97F03F">  équilibré,</span>')
+.pauseFor(500)
+.deleteChars(10)
+.typeString('<span style="color: #44FCEA">facilement,</span>')
+.pauseFor(500)
+.deleteChars(11)
+.typeString('<span style="color: #FF6B00">rapidement</strong> !!!</span>')
+.pauseFor(2000)
+.start();
 
 //bouton de scroll en haut de la page
 scrollTop.onclick = () => {
@@ -58,19 +74,3 @@ card5.onclick = () => {
     h2.classList.toggle('h2--flip');
     h2Bis.classList.toggle('h2--flip');
 }
-new Typewriter(text, {
-    //boucle l'animation
-    loop:true,
-    deleteSpeed: 20
-})
-//écrire du texte de façon "direct". changeDelay change la vitesse d'apparition en ms
-.changeDelay(50)
-.typeString('Cuisinez :<span style="color: #97F03F">  équilibré,</span>')
-.pauseFor(500)
-.deleteChars(10)
-.typeString('<span style="color: #44FCEA">facilement,</span>')
-.pauseFor(500)
-.deleteChars(11)
-.typeString('<span style="color: #FF6B00">rapidement</strong> !!!</span>')
-.pauseFor(2000)
-.start();
